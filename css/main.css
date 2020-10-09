@@ -132,6 +132,7 @@ header h1
   background-size: cover;
   background-position: center;
   height: 95vh;
+
 }
 
 .hero-content
@@ -391,6 +392,7 @@ header h1
   {
     min-width: 100%;
   }
+
 }
 
 @media only screen and (max-width: 420px)
