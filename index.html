@@ -11,10 +11,22 @@
   <meta content="" property="og:type">
   <meta content="" property="og:url">
   <meta content="" property="og:image">
+
+  <!-- Bootstrap -->
   <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
   <link href="site.webmanifest" rel="manifest">
   <link href="icon.png" rel="apple-touch-icon">
+
+
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Place favicon.ico in the root directory -->
@@ -250,8 +262,31 @@
 
 <!-- Showcase Section -->
 
-<div class="container showcase-container">
+<div class="container showcase-container d-flex align-items-center justify-content-around flex-column ">
+  <div class="showcase-header text-center mb-5 mt-5">
+    <h4>Serviced Kicks</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fugiat nostrum praesentium quia tenetur vero.</p>
+  </div>
+  <div class="container carousel-container">
+        <div class="owl-carousel owl-theme">
+            <div class="showcase">
+              <img src="img/showcase-1.jpg" class="img-fluid" alt="">
+            </div>
 
+          <div class="showcase">
+            <img src="img/showcase-1.jpg" alt="">
+          </div>
+
+          <div class="showcase-1">
+            <img src="img/showcase-1.jpg" alt="">
+          </div>
+
+          <div class="showcase-1">
+            <img src="img/showcase-1.jpg" alt="">
+          </div>
+
+        </div>
+  </div>
 </div>
 
 
@@ -268,7 +303,31 @@
 
 
 
+<script src="js/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="js/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        items:1,
+        nav:true
+      },
+      600:{
+        items:1,
+        nav:false
+      },
+      1000:{
+        items:3,
+        nav:true,
+        loop:false
+      }
+    }
+  })
+</script>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
