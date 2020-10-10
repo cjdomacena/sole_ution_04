@@ -10,7 +10,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+:root
+{
+  --ff-main: 'Roboto',sans-serif;
+}
 html {
   color: #222;
   font-size: 1em;
@@ -251,8 +254,79 @@ header h1
 
 }
 
+/* How To Styling */
+.banner
+{
+  background-color: #CEF670;
+  height: 80px;
+  color: #010D26;
+  font-family: var(--ff-main);
+  margin-top: 10vh;
+
+}
+.banner h3
+{
+  margin-bottom: 0;
+  font-weight: 700;
+}
 
 
+.howto-container
+{
+  min-height: 100vh;
+
+  font-family: var(--ff-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.howto-header
+{
+  margin-bottom: 50px;
+  font-size: 38px;
+  font-family: 'Mr Dafoe', cursive;
+  color: white;
+}
+
+.num-box
+{
+  background-color: #CEF670;
+  height: 155px;
+  width: 208px;
+  text-align: center;
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mr Dafoe', cursive;
+}
+
+.num-box p
+{
+  margin: 0;
+}
+
+.test
+{
+
+  max-width: max-content;
+
+}
+
+.howto-description p
+{
+  font-size: 21px;
+  color: white;
+  font-weight: 400;
+}
+.howto-description h4
+{
+  font-size: 32px;
+  font-weight: 700;
+  color: #CEF670;
+  margin-bottom: 24px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -358,6 +432,9 @@ header h1
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+
 /* 600px width and UP*/
 @media only screen and (min-width: 35em)
 {
@@ -375,11 +452,14 @@ header h1
   }
 
 }
+/* ============================================================
+   ============================================================ */
+
+
+
 /* 1200px width and below*/
 @media only screen and (max-width: 1200px)
 {
-  /* Style adjustments for viewports that meet the condition */
-
   .pricing-hero, .pricing-text
   {
     text-align: center;
@@ -393,7 +473,39 @@ header h1
     min-width: 100%;
   }
 
+  .banner
+  {
+    height: 50px;
+  }
+
 }
+/* ============================================================
+   ============================================================ */
+
+
+
+/* For screens 1000px and below made just for the how to section */
+@media only screen and (max-width: 1000px)
+{
+  .howto-container .col-12
+  {
+    max-width: max-content;
+    text-align: center;
+  }
+
+  .howto-container .howto-description
+  {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .howto-header
+  {
+    font-size: 31px;
+  }
+}
+/* ============================================================
+   ============================================================ */
 
 @media only screen and (max-width: 420px)
 {
