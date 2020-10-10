@@ -327,6 +327,33 @@ header h1
   color: #CEF670;
   margin-bottom: 24px;
 }
+
+
+
+.margins
+{
+  height: 20vh;
+  margin-top: 50px;
+}
+
+.showcase-container
+{
+  height: 60vh;
+  background-color: white;
+  margin-bottom: 20vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
