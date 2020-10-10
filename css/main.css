@@ -339,7 +339,7 @@ header h1
 .showcase-container
 {
   min-height: 60vh;
-  background-color: #CEF670;
+background-color: #CEF670;
   margin-bottom: 20vh;
 }
 
@@ -348,7 +348,10 @@ header h1
   font-family: 'Roboto', sans-serif;
   font-size: 51px;
   font-weight: 700;
+
 }
+
+
 
 /* ==========================================================================
    Helper classes
