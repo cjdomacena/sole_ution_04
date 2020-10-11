@@ -166,9 +166,6 @@ header h1
 
 /*Pricing styles*/
 
-
-
-
 .pricing-container,.pricing-contents
 {
   min-height: 100vh;
@@ -269,6 +266,7 @@ header h1
 {
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 21px;
 }
 
 
@@ -308,7 +306,7 @@ header h1
   margin: 0;
 }
 
-.test
+.pricing-text
 {
 
   max-width: max-content;
@@ -331,11 +329,6 @@ header h1
 
 
 
-.margins
-{
-  height: 20vh;
-  margin-top: 50px;
-}
 
 .showcase-container
 {
@@ -425,7 +418,10 @@ header h1
   width: 70px;
 }
 
-
+.strong
+{
+  font-weight: 700;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -445,6 +441,11 @@ header h1
 .fade-in.appear
 {
   opacity: 1;
+}
+.margins
+{
+  height: 10vh;
+  margin-top: 50px;
 }
 
 
