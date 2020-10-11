@@ -351,6 +351,78 @@ header h1
 
 }
 
+/* Bio Styling */
+.bio-content
+{
+  min-height: 80vh;
+}
+
+.bio-header
+{
+  margin: 0 auto;
+  text-align: center;
+}
+.bio-header h1
+{
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 61px;
+  color: #CEF670;
+}
+.bio-header p
+{
+  max-width: 50ch;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.bio-items
+{
+  min-height: 60vh;
+  max-width: 100%;
+}
+
+.main-row
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-description
+{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.first-bio-column,.second-bio-column
+{
+  max-width: 50ch;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bio-name
+{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.img-shape
+{
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.social-media-links
+{
+  width: 70px;
+}
 
 
 /* ==========================================================================
@@ -540,6 +612,18 @@ header h1
     {
       font-size: 45px;
     }
+
+  .bio-content,.bio-items
+  {
+    height: 80vh;
+  }
+
+  .first-bio-column,.second-bio-column
+  {
+    max-width: 50ch;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media print,
