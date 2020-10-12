@@ -3,15 +3,11 @@ const appearOptions = {
   threshold: 0.5,
 
 };
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll)
-{
+const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
   entries.forEach(entry => {
-    if(!entry.isIntersecting)
-    {
+    if (!entry.isIntersecting) {
       return;
-    }
-    else
-    {
+    } else {
       entry.target.classList.add('appear');
       appearOnScroll.unobserve(entry.target);
     }
@@ -22,3 +18,8 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 })
+
+
+$('.navbar-collapse a').click(function () {
+  $(".navbar-collapse").collapse('hide');
+});
