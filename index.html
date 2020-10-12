@@ -50,7 +50,7 @@
 
 <!-- NAVBAR -->
 <div class="container-fluid padding-0 navbar-container sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-lg">
     <a class="navbar-brand d-sm-block d-md-block d-lg-none" href="#">Sole_Ution</a>
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
             data-target="#navbarNav" data-toggle="collapse" type="button">
@@ -275,18 +275,17 @@
           <img alt="" class="img-fluid" src="img/showcase-1.jpg">
         </div>
 
-        <div class="showcase">
-          <img alt="" src="img/showcase-1.jpg">
+        <div class="showcase-1">
+          <img alt="" src="img/showcase-2.jpg" class="img-fluid" >
         </div>
 
         <div class="showcase-1">
-          <img alt="" src="img/showcase-1.jpg">
+          <img alt="" src="img/showcase-3.jpg" class="img-fluid">
         </div>
 
         <div class="showcase-1">
-          <img alt="" src="img/showcase-1.jpg">
+          <img alt="" src="img/showcase-4.jpg" class="img-fluid">
         </div>
-
       </div>
     </div>
   </div>
@@ -409,20 +408,22 @@ So ayun, nagkaroon ako ng partner na tutulong saakin then meron tagahype to cont
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
+    items: 1,
+    autoHeight: true,
     responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
+    responsive:{
+      0:{
+        items:1,
+        nav:true
       },
-      600: {
-        items: 1,
-        nav: false
+      600:{
+        items:3,
+        nav:false
       },
-      1000: {
-        items: 2,
-        nav: true,
-        loop: false
+      1000:{
+        items:1,
+        nav:true,
+        loop:false
       }
     }
   })
