@@ -352,9 +352,12 @@ header h1
 
 .showcase-container
 {
-  height: auto;
   background-color: #CEF670;
   margin-bottom: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
 }
 
 .showcase-header h4
@@ -364,6 +367,22 @@ header h1
   font-weight: 700;
 }
 
+.showcase-container img
+{
+  width: auto;
+  height: 80vh;
+  object-fit: contain;
+}
+
+.test
+{
+  height: auto;
+  background-color: #010D26;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.50);
+}
 
 /* Bio Styling */
 .bio-content
@@ -645,5 +664,14 @@ header h1
     max-width: 50ch;
     margin-left: 0;
     margin-right: 0;
+  }
+  .showcase-container img
+  {
+    height: 30vh;
+  }
+
+  .test
+  {
+    height: 50vh;
   }
 }
