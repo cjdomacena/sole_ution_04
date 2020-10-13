@@ -372,16 +372,17 @@ header h1
   width: auto;
   height: 80vh;
   object-fit: contain;
+
 }
 
 .carousel-box
 {
   height: auto;
-  background-color: #010D26;
+  background-color: #F5F5F5;
   padding-top: 50px;
   margin-bottom: 50px;
   border-radius: 10px;
-  box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.50);
+  box-shadow:  0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Bio Styling */
@@ -672,6 +673,6 @@ header h1
 
   .test
   {
-    height: 50vh;
+    height: 60vh;
   }
 }
