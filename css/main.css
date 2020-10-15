@@ -388,7 +388,8 @@ header h1
 /* Bio Styling */
 .bio-content
 {
-  min-height: 80vh;
+  min-height: auto;
+  min-width: 100%;
 }
 
 .bio-header
@@ -411,45 +412,76 @@ header h1
   font-weight: 300;
 }
 
-.bio-items
+.main-row
 {
-  min-height: 60vh;
   max-width: 100%;
+  height: auto;
+  margin-top: 50px;
 }
 
-.main-row
+
+
+
+.bio-person-1
 {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: auto;
+  min-width: 100%;
+  flex-wrap: wrap;
 }
 
-.bio-description
+.bio-person-1 h1
 {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.first-bio-column,.second-bio-column
-{
-  max-width: 50ch;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.bio-name
-{
-  font-size: 18px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 28px;
 }
+
+
+
+
+/*.bio-items*/
+/*{*/
+/*  min-height: 60vh;*/
+/*  max-width: 100%;*/
+/*  background-color: #4DC7A0;*/
+/*  min-width: 100%;*/
+/*}*/
+
+/*.main-row*/
+/*{*/
+/*  display:flex;*/
+/*  justify-content: center;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.bio-description*/
+/*{*/
+/*  text-align: center;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+/*.first-bio-column,.second-bio-column*/
+/*{*/
+/*  max-width: 50ch;*/
+/*  margin-left: 50px;*/
+/*  margin-right: 50px;*/
+/*}*/
+
+/*.bio-name*/
+/*{*/
+/*  font-size: 18px;*/
+/*  font-family: 'Roboto', sans-serif;*/
+/*  font-weight: 700;*/
+/*  letter-spacing: 2px;*/
+/*}*/
 
 .img-shape
 {
-  height: 200px;
-  width: 200px;
-  background-color: yellow;
+  min-height: 200px;
+  min-width: 200px;
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -458,10 +490,10 @@ header h1
   width: 70px;
 }
 
-.strong
-{
-  font-weight: 700;
-}
+/*.strong*/
+/*{*/
+/*  font-weight: 700;*/
+/*}*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -655,9 +687,10 @@ header h1
       font-size: 45px;
     }
 
-  .bio-content,.bio-items
+  .bio-content,.bio-items,.social-media-links,.bio-image
   {
-    height: 80vh;
+    text-align: center;
+    margin: auto;
   }
 
   .first-bio-column,.second-bio-column
@@ -674,5 +707,13 @@ header h1
   .test
   {
     height: 60vh;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  .bio-content,.bio-items,.social-media-links,.bio-image
+  {
+    text-align: center;
+    margin: auto;
   }
 }
