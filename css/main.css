@@ -481,7 +481,9 @@ header h1
 {
   min-height: 200px;
   min-width: 200px;
-  background-color: white;
+  background-image: url("../img/bio-1-img.jpg");
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
 }
 
@@ -490,10 +492,69 @@ header h1
   width: 70px;
 }
 
-/*.strong*/
-/*{*/
-/*  font-weight: 700;*/
-/*}*/
+/* Contact Page Styling */
+.contact
+{
+  background-color: #CEF670;
+}
+.contact-container
+{
+  min-height: 40vh;
+  background-color: #CEF670;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content
+{
+ display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: #010D26;
+}
+.contact-title
+{
+
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-content h1
+{
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 72px;
+}
+.contact-info
+{
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-info li
+{
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* FORMS CONTAINER */
+.forms
+{
+  height: 50vh;
+  background-color: #008CBA;
+}
+
+.forms-container
+{
+  min-height: 40vh;
+  width: 100%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -676,6 +737,11 @@ header h1
   {
     font-size: 31px;
   }
+  .contact-title, .contact-info
+  {
+    width: 100%;
+    text-align: center;
+  }
 }
 /* ============================================================
    ============================================================ */
@@ -708,6 +774,16 @@ header h1
   {
     height: 60vh;
   }
+
+.contact-title
+{
+  font-size: 52px;
+}
+.contact-info
+{
+  font-size: 18px;
+}
+
 }
 @media only screen and (max-width: 800px)
 {
