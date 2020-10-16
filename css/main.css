@@ -553,12 +553,12 @@ header h1
 .forms-container
 {
   font-family: 'Roboto', sans-serif;
+  width: 50%;
 }
 .forms-container h1
 {
   margin-top: 0;
   margin-bottom: 0;
-
   font-size: 41px;
   font-weight: 700;
 }
@@ -580,6 +580,24 @@ header h1
   min-height: 40vh;
   width: 100%;
 }
+
+.forms-container .btn
+{
+  background-color: #010D26;
+  border-style: none;
+  border-radius: 0;
+  width:120px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+.forms-container .btn:hover
+{
+  background-color: #CEF670;
+  color: #010D26;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

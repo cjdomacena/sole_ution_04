@@ -73,7 +73,7 @@
           <a class="nav-link" href="#aboutUs">ABOUT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -374,7 +374,7 @@
 </section>
 
 <!-- Contact Us -->
-<section class="contact container-fluid">
+<section class="contact container-fluid" id="contact">
   <div class="container contact-container">
     <div class="contact-content mb-5">
       <div class="contact-title">
@@ -398,31 +398,47 @@
 <!-- FORMS -->
 
 <div class="forms forms-item container-fluid">
-  <div class="container forms-container">
-    <form action="POST" data-netlify="true">
-      <h1>HAVE SOME QUESTIONS?</h1>
-      <p>Send us a message if you have an inquiry or question regarding our services.</p>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input class="form-control" id="inputEmail4" name="email" type="email" placeholder="Enter Email">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputName">Name</label>
-          <input class="form-control" id="inputName" name="name" type="text" placeholder="Enter Name" >
+
+      <div class="container forms-container">
+        <div class="forms-test">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 col-12">
+              <form action="POST" data-netlify="true">
+                <h1>HAVE SOME QUESTIONS?</h1>
+                <p>Send us a message if you have an inquiry or question regarding our services.</p>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input class="form-control" id="inputEmail4" name="email" type="email" placeholder="Enter Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input class="form-control" id="inputName" name="name" type="text" placeholder="Enter Name" >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="text-area">Message: </label>
+                  <textarea class="form-control " id="text-area" name="message" rows="7" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="field mb-5">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <button class="btn btn-primary btn-lg mt-3" type="submit">SUBMIT</button>
+              </form>
+            </div>
+            <div class="col-lg-5 ml-xl-5 ml-lg-5 col-12 mt-md-5">
+              <h1 class="mb-5">Message Us</h1>
+              <p>You can contact us using the form below, alternatively you can message us through our social media found <span><a
+                href="#contact">here</a></span>.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="text-area">Message: </label>
-        <textarea class="form-control " id="text-area" name="message" rows="8" placeholder="Enter Message"></textarea>
-      </div>
-      <div class="field mb-5">
-        <div data-netlify-recaptcha="true"></div>
-      </div>
-      <button class="btn btn-primary btn-lg mt-3" type="submit">SUBMIT</button>
-    </form>
-  </div>
+
+
 </div>
 
 
