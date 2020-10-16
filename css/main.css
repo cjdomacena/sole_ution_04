@@ -499,7 +499,7 @@ header h1
 }
 .contact-container
 {
-  min-height: 40vh;
+  min-height: 35vh;
   background-color: #CEF670;
   margin-top: 100px;
   display: flex;
@@ -547,8 +547,8 @@ header h1
 {
   background-color: #EF6F6C;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .forms-container
 {
