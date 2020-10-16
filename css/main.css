@@ -545,10 +545,11 @@ header h1
 /* FORMS CONTAINER */
 .forms-item
 {
-  background-color: #EF6F6C;
+  background-color: #CEF670;
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 20vh;
 }
 .forms-container
 {
@@ -593,11 +594,40 @@ header h1
 }
 .forms-container .btn:hover
 {
-  background-color: #CEF670;
+  background-color: #EF6F6C;
   color: #010D26;
 }
 
+.contact-text h1
+{
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 51px;
+  color: #010D26;
+}
 
+.form-links li a
+{
+  color: #010D26;
+
+}
+
+.form-content
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.form-content h6
+{
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+footer
+{
+  color: ghostwhite;
+  background-color: #010D26;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
