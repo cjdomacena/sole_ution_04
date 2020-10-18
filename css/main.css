@@ -221,6 +221,7 @@ header h1
   font-size: 24px;
   font-weight: 700;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .price
@@ -440,43 +441,6 @@ header h1
 
 
 
-
-/*.bio-items*/
-/*{*/
-/*  min-height: 60vh;*/
-/*  max-width: 100%;*/
-/*  background-color: #4DC7A0;*/
-/*  min-width: 100%;*/
-/*}*/
-
-/*.main-row*/
-/*{*/
-/*  display:flex;*/
-/*  justify-content: center;*/
-/*  flex-direction: column;*/
-/*}*/
-
-/*.bio-description*/
-/*{*/
-/*  text-align: center;*/
-/*  margin: 0 auto;*/
-/*}*/
-
-/*.first-bio-column,.second-bio-column*/
-/*{*/
-/*  max-width: 50ch;*/
-/*  margin-left: 50px;*/
-/*  margin-right: 50px;*/
-/*}*/
-
-/*.bio-name*/
-/*{*/
-/*  font-size: 18px;*/
-/*  font-family: 'Roboto', sans-serif;*/
-/*  font-weight: 700;*/
-/*  letter-spacing: 2px;*/
-/*}*/
-
 .img-shape
 {
   min-height: 200px;
@@ -608,6 +572,7 @@ header h1
 .form-links li a
 {
   color: #010D26;
+  text-decoration: underline;
 
 }
 
